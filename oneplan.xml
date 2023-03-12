@@ -1,0 +1,117 @@
+<Products Count="19133">
+  <Product ProductCode="YNG/VDSP2D" ProductItemID="112C45F9-F066-42C8-8162-228C074BDCCF" FundItemId="">
+    <FundCode>QTU</FundCode>
+    <ProductGroupCode>YNG</ProductGroupCode>
+    <Name>Bronze+ Young Choice</Name>
+    <ProductType>Combined</ProductType>
+    <ProductURL>https://tuh.com.au/package/bronze-plus-young-choice</ProductURL>
+    <PHISURL xsi:nil="true" />
+    <FundsProductCode>VFYNG</FundsProductCode>
+    <ProductStatus>Open</ProductStatus>
+    <Corporate Atomic="true" />
+    <OnlyAvailableWith Atomic="true">
+      <NotApplicable xsi:nil="true" />
+    </OnlyAvailableWith>
+    <DateValidFrom xsi:nil="true" />
+    <DateValidTo xsi:nil="true" />
+    <DateIssued>2023-01-01</DateIssued>
+    <State>VIC</State>
+    <WhoIsCovered OnlyOnePerson="false">
+        <Coverage NumberOfAdults="2">
+            <DependantCover Title="Child" Covered="true" />
+            <DependantCover Title="ConditionalNonStudent" Covered="false" />
+            <DependantCover Title="Disability" Covered="false" />
+            <DependantCover Title="NonClassified" Covered="true" />
+            <DependantCover Title="NonStudent" Covered="false" />
+            <DependantCover Title="Student" Covered="true" />
+        </Coverage>
+    </WhoIsCovered>
+    <Excesses ExcessType="LimitedPerPerson" Atomic="true">
+        <ExcessPerAdmission>0</ExcessPerAdmission>
+        <ExcessPerPerson>250</ExcessPerPerson>
+        <ExcessWaivers>
+            <Waiver>Dependents</Waiver>
+        </ExcessWaivers>
+    </Excesses>
+    <CoPayments CoPaymentType="None" Atomic="true" />
+    <MedicareLevySurchargeExempt>true</MedicareLevySurchargeExempt>
+    <PremiumNoRebate>372.09</PremiumNoRebate>
+    <PremiumHospitalComponent>297.67</PremiumHospitalComponent>
+    <AddOns />
+    <Brands />
+    <HospitalCover AccidentCover="true" BasedOnID="">
+        <HospitalTier>BronzePlus</HospitalTier>
+        <AgeBasedDiscount Available="true" AvailableForTransferee="true" />
+        <Accommodation>PrivateOrPublic</Accommodation><HospitalPercent xsi:nil="true" />
+        <LimitHospitalDays xsi:nil="true" />
+        <MedicalServices>
+            <MedicalService Title="AssistedReproductive" Cover="NotCovered" />
+            <MedicalService Title="BackNeckSpine" Cover="NotCovered" />
+            <MedicalService Title="Blood" Cover="Covered" />
+            <MedicalService Title="BoneJointMuscle" Cover="Covered" />
+            <MedicalService Title="BrainNervousSystem" Cover="Covered" />
+            <MedicalService Title="BreastSurgery" Cover="Covered" />
+            <MedicalService Title="Cataracts" Cover="NotCovered" />
+            <MedicalService Title="ChemotherapyRadiotherapyImmunotherapy" Cover="Covered" />
+            <MedicalService Title="DentalSurgery" Cover="Covered" />
+            <MedicalService Title="Diabetes" Cover="Covered" />
+            <MedicalService Title="Dialysis" Cover="NotCovered" />
+            <MedicalService Title="DigestiveSystem" Cover="Covered" />
+            <MedicalService Title="EarNoseThroat" Cover="Covered" />
+            <MedicalService Title="Eye" Cover="Covered" />
+            <MedicalService Title="GastrointestinalEndoscopy" Cover="Covered" />
+            <MedicalService Title="Gynaecology" Cover="Covered" />
+            <MedicalService Title="HeartVascular" Cover="NotCovered" />
+            <MedicalService Title="HerniaAppendix" Cover="Covered" />
+            <MedicalService Title="HospitalPsychiatric" Cover="Restricted" />
+            <MedicalService Title="ImplantationHearingDevices" Cover="Covered" />
+            <MedicalService Title="InsulinPumps" Cover="Covered" />
+            <MedicalService Title="JointReconstructions" Cover="Covered" />
+            <MedicalService Title="JointReplacements" Cover="NotCovered" />
+            <MedicalService Title="KidneyBladder" Cover="Covered" />
+            <MedicalService Title="LungChest" Cover="Covered" />
+            <MedicalService Title="MaleReproductive" Cover="Covered" />
+            <MedicalService Title="MiscarriageTerminationOfPregnancy" Cover="Covered" />
+            <MedicalService Title="PainManagement" Cover="Covered" />
+            <MedicalService Title="PainManagementWithDevice" Cover="NotCovered" />
+            <MedicalService Title="PalliativeCare" Cover="Covered" />
+            <MedicalService Title="PlasticReconstructiveSurgery" Cover="Covered" />
+            <MedicalService Title="PodiatricSurgery" Cover="Covered" />
+            <MedicalService Title="PregnancyBirth" Cover="NotCovered" />
+            <MedicalService Title="Rehabilitation" Cover="Restricted" />
+            <MedicalService Title="Skin" Cover="Covered" />
+            <MedicalService Title="SleepStudies" Cover="Covered" />
+            <MedicalService Title="TonsilsAdenoidsGrommets" Cover="Covered" />
+            <MedicalService Title="WeightLossSurgery" Cover="NotCovered" />
+        </MedicalServices>
+        <WaitingPeriods>
+            <WaitingPeriod Unit="Month" Atomic="true" Title="SubAcute">2</WaitingPeriod>
+            <WaitingPeriod Unit="Month" Atomic="true" Title="PreExisting">12</WaitingPeriod>
+            <WaitingPeriod Unit="Month" Atomic="true" Title="Other">2</WaitingPeriod>
+        </WaitingPeriods>
+        <OtherProductFeatures>Value-added services:  home care after hospital, chronic disease management programs, hospital substitute programs (conditions apply). 
+An excess is applied once per adult per calendar year.  The hospital excess is waived for dependants. Reducing your excess is considered to be upgrading your membership. We will charge your previous excess within the first two months of the upgrade, including for adults who are upgrading their level of cover by joining/re-joining as a dependant on a family membership.</OtherProductFeatures>
+    </HospitalCover>
+    <GeneralHealthCover BasedOnID="">
+        <ProductPreferredProviderServices UseFund="true" />
+        <GeneralHealthServices AllStatesHaveSameBenefits="true" OptionalServicesProduct="No" MaxServicesCovered="1">
+            <GeneralHealthService Title="DentalGeneral" Covered="true" HasSpecialFeatures="true" Atomic="true">
+                <WaitingPeriod Unit="Month" Atomic="true">2</WaitingPeriod>
+                <BenefitsList State="ALL" Atomic="true">
+                    <Benefit Type="Dollars" Item="DentalGeneral012PeriodicExam">31.50</Benefit>
+                    <Benefit Type="Dollars" Item="DentalGeneral114ScaleClean">60.90</Benefit>
+                    <Benefit Type="Dollars" Item="DentalGeneral121Fluoride">22.05</Benefit>
+                    <Benefit Type="Dollars" Item="DentalGeneral322Extraction">100.00</Benefit>
+                </BenefitsList>
+            </GeneralHealthService>
+            <GeneralHealthService Title="DentalMajor" Covered="false" HasSpecialFeatures="false" Atomic="true" />
+            <GeneralHealthService Title="Endodontic" Covered="true" HasSpecialFeatures="false" Atomic="true">
+                <WaitingPeriod Unit="Month" Atomic="true">12</WaitingPeriod>
+                <BenefitsList State="ALL" Atomic="true">
+                    <Benefit Type="Dollars" Item="Endodontic417RootCanalTherapy">135.00</Benefit></BenefitsList></GeneralHealthService><GeneralHealthService Title="Orthodontic" Covered="false" HasSpecialFeatures="false" Atomic="true" /><GeneralHealthService Title="Optical" Covered="true" HasSpecialFeatures="true" Atomic="true"><WaitingPeriod Unit="Month" Atomic="true">6</WaitingPeriod><BenefitsList State="ALL" Atomic="true"><Benefit Type="Percent" Item="OpticalSingleVisionLenses">100</Benefit><Benefit Type="Percent" Item="OpticalMultiFocalLenses">100</Benefit></BenefitsList></GeneralHealthService><GeneralHealthService Title="NonPBS" Covered="false" HasSpecialFeatures="false" Atomic="true" /><GeneralHealthService Title="Physiotherapy" Covered="true" HasSpecialFeatures="true" Atomic="true"><WaitingPeriod Unit="Month" Atomic="true">2</WaitingPeriod><BenefitsList State="ALL" Atomic="true"><Benefit Type="Dollars" Item="PhysiotherapyInitial">35.00</Benefit><Benefit Type="Dollars" Item="PhysiotherapySubsequent">33.00</Benefit></BenefitsList></GeneralHealthService><GeneralHealthService Title="Chiropractic" Covered="true" HasSpecialFeatures="false" Atomic="true"><WaitingPeriod Unit="Month" Atomic="true">2</WaitingPeriod><BenefitsList State="ALL" Atomic="true"><Benefit Type="Dollars" Item="ChiropracticInitial">28.00</Benefit><Benefit Type="Dollars" Item="ChiropracticSubsequent">25.00</Benefit></BenefitsList></GeneralHealthService><GeneralHealthService Title="Podiatry" Covered="false" HasSpecialFeatures="false" Atomic="true" /><GeneralHealthService Title="Psychology" Covered="true" HasSpecialFeatures="false" Atomic="true"><WaitingPeriod Unit="Month" Atomic="true">2</WaitingPeriod><BenefitsList State="ALL" Atomic="true"><Benefit Type="Dollars" Item="PsychologyInitial">70.00</Benefit><Benefit Type="Dollars" Item="PsychologySubsequent">55.00</Benefit></BenefitsList></GeneralHealthService><GeneralHealthService Title="Acupuncture" Covered="true" HasSpecialFeatures="false" Atomic="true"><WaitingPeriod Unit="Month" Atomic="true">2</WaitingPeriod><BenefitsList State="ALL" Atomic="true"><Benefit Type="Dollars" Item="AcupunctureInitial">32.00</Benefit><Benefit Type="Dollars" Item="AcupunctureSubsequent">27.00</Benefit></BenefitsList></GeneralHealthService><GeneralHealthService Title="RemedialMassage" Covered="true" HasSpecialFeatures="false" Atomic="true"><WaitingPeriod Unit="Month" Atomic="true">2</WaitingPeriod><BenefitsList State="ALL" Atomic="true"><Benefit Type="Dollars" Item="RemedialMassageInitial">35.00</Benefit><Benefit Type="Dollars" Item="RemedialMassageSubsequent">35.00</Benefit></BenefitsList></GeneralHealthService><GeneralHealthService Title="HearingAids" Covered="false" HasSpecialFeatures="false" Atomic="true" /><GeneralHealthService Title="GlucoseMonitor" Covered="false" HasSpecialFeatures="false" Atomic="true" /><GeneralHealthService Title="Audiology" Covered="false" HasSpecialFeatures="false" Atomic="true" /><GeneralHealthService Title="AntenatalPostnatal" Covered="false" HasSpecialFeatures="false" Atomic="true" /><GeneralHealthService Title="ChineseHerbalMedicine" Covered="false" HasSpecialFeatures="false" Atomic="true" /><GeneralHealthService Title="Dietetics" Covered="false" HasSpecialFeatures="false" Atomic="true" /><GeneralHealthService Title="ExercisePhysiology" Covered="true" HasSpecialFeatures="false" Atomic="true"><WaitingPeriod Unit="Month" Atomic="true">2</WaitingPeriod><BenefitsList State="ALL" Atomic="true"><Benefit Type="Dollars" Item="ExercisePhysiologyInitial">23.00</Benefit><Benefit Type="Dollars" Item="ExercisePhysiologySubsequent">23.00</Benefit></BenefitsList></GeneralHealthService><GeneralHealthService Title="Orthoptics" Covered="false" HasSpecialFeatures="false" Atomic="true" /><GeneralHealthService Title="HealthManagement" Covered="true" HasSpecialFeatures="true" Atomic="true"><WaitingPeriod Unit="Month" Atomic="true">2</WaitingPeriod><BenefitsList State="ALL" Atomic="true"><Benefit Type="Percent" Item="HealthManagement">80</Benefit></BenefitsList></GeneralHealthService><GeneralHealthService Title="HomeNursing" Covered="false" HasSpecialFeatures="false" Atomic="true" /><GeneralHealthService Title="OccupationalTherapy" Covered="false" HasSpecialFeatures="false" Atomic="true" /><GeneralHealthService Title="Orthotics" Covered="false" HasSpecialFeatures="false" Atomic="true" /><GeneralHealthService Title="Osteopathy" Covered="true" HasSpecialFeatures="false" Atomic="true"><WaitingPeriod Unit="Month" Atomic="true">2</WaitingPeriod><BenefitsList State="ALL" Atomic="true"><Benefit Type="Dollars" Item="OsteopathyInitial">31.00</Benefit><Benefit Type="Dollars" Item="OsteopathySubsequent">26.00</Benefit></BenefitsList></GeneralHealthService><GeneralHealthService Title="SpeechTherapy" Covered="false" HasSpecialFeatures="false" Atomic="true" /><GeneralHealthService Title="Vaccinations" Covered="false" HasSpecialFeatures="false" Atomic="true" /><OtherServices>Also covers:
+Group Physiotherapy $17 per consult included in Physiotherapy sub-limit.  Chiropractic x-ray (one per year) $45 included in Chiropractic sub-limit.  Counselling $35/$28 per consult and Group Psychology $30 per consult up to $250 sub-limit.  Osteopathic x-ray (one per year) $45 included in Osteopathy sub-limit.  Myotherapy $35 per consult included in Remedial Massage &amp; Acupuncture sub-limit.  Health Screenings 80% of cost up to $85 sub-limit. Active Health Bonus $20/person $40/membership (conditions apply).
+</OtherServices></GeneralHealthServices><BenefitLimits><BenefitLimit Title="DentalGeneral"><ServicesCombined IncludesOtherUnlisted="true" Atomic="true"><Service SubLimitsApply="false">DentalGeneral</Service><Service SubLimitsApply="false">Endodontic</Service></ServicesCombined><LimitPerPerson>600</LimitPerPerson></BenefitLimit><BenefitLimit Title="Optical"><ServicesCombined IncludesOtherUnlisted="false" Atomic="true"><Service SubLimitsApply="false">Optical</Service></ServicesCombined><LimitPerPerson>200</LimitPerPerson></BenefitLimit><BenefitLimit Title="Physiotherapy"><ServicesCombined IncludesOtherUnlisted="true" Atomic="true"><Service SubLimitsApply="true">Physiotherapy</Service><Service SubLimitsApply="true">Chiropractic</Service><Service SubLimitsApply="true">Psychology</Service><Service SubLimitsApply="true">Acupuncture</Service><Service SubLimitsApply="true">RemedialMassage</Service><Service SubLimitsApply="true">ExercisePhysiology</Service><Service SubLimitsApply="true">Osteopathy</Service></ServicesCombined><LimitPerPerson>450</LimitPerPerson></BenefitLimit><BenefitLimit Title="HealthManagement"><ServicesCombined IncludesOtherUnlisted="true" Atomic="true"><Service SubLimitsApply="true">HealthManagement</Service></ServicesCombined><LimitPerPerson>150</LimitPerPerson><LimitPerPolicy>300</LimitPerPolicy></BenefitLimit><NoLimitOnPreventativeDental>false</NoLimitOnPreventativeDental></BenefitLimits><OtherProductFeatures>Online and mobile access, claims via smart phone app.</OtherProductFeatures><SpecialFeatures>*General dental overall limit includes general and preventative dental and major dental Endodontia services ($300  sub-limit).  *Optical set benefits apply for frames, lenses and contact lenses.  *Physiotherapy overall $450 limit includes Physiotherapy and Group Physiotherapy ($200 sub-limit), $80 sub-limit Exercise Physiology, $200 sub-limit Chiropractic, $250 sub-limit Psychology, $200 sub-limit Osteopathy, and $200/person $400/membership sub-limit Remedial Massage, Myotherapy and Acupuncture. *Health Management overall limit includes $85 sub-limit Health Screenings, $80 sub-limit Health Management Programs, and $120 sub-limit Healthy Lifestyle Programs.</SpecialFeatures></GeneralHealthCover><ProductAmbulance UseFund="true" /></Product>
+</Products>
+<Foo>
+    Hello
+</Foo>
