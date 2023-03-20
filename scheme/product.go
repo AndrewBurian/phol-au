@@ -14,6 +14,7 @@ type Product struct {
 	ProductType   ProductType
 	ProductID     string `xml:",attr,omitempty"`
 	ProductCode   string `xml:",attr"`
+	FundCode      string `xml:",attr"`
 	ProductUrl    *URLorEmpty
 	Name          string
 	ProductStatus string
@@ -39,13 +40,14 @@ type ProductType struct {
 }
 
 type WhoIsCovered struct {
-	OnlyOnePerson string `xml:",attr"`
+	OnlyOnePerson bool `xml:",attr"`
 	Coverage      struct {
 		Dependants
 	}
 }
 
 type Dependants struct {
+	NumberOfAdults int `xml:",attr"`
 	DependantCover []struct {
 		Title   string `xml:",attr"`
 		Covered bool   `xml:",attr"`
@@ -54,13 +56,10 @@ type Dependants struct {
 
 type Excesses struct {
 	ExcessType         string `xml:",attr"`
-	ExcessPerPolicy    Dollars
-	ExcessPerPerson    Dollars
-	ExcessPerAdmission Dollars
-	ExcessWaivers      []struct {
-		// The schema of waiver is referenced, but undocumented
-		Waiver []string `xml:",innerxml"`
-	}
+	ExcessPerPolicy    float32
+	ExcessPerPerson    float32
+	ExcessPerAdmission float32
+	ExcessWaivers      []string `xml:">Waiver"`
 }
 
 type CoPayments struct {
@@ -80,7 +79,7 @@ type ProductAddOns struct {
 }
 
 type HospitalCover struct {
-	HospitalTier TierHospital
+	HospitalTier string
 	/*
 		If Available is true this policy provides an age-based discount. As per Private Health Insurance (Reforms) Amendment Rules 2018.
 		If Available is true a sequence of 1 up to a maximum of 4 non-contiguous age-ranges between the ages of 18 to 29 inclusive must be specified.
@@ -91,44 +90,103 @@ type HospitalCover struct {
 		the person is entitled to retain the age-based discount (if any) they were receiving under the old policy .
 	*/
 	AgeBasedDiscount     AgeBasedDiscount
-	Accommodation        Accommodation
-	HospitalPercent      Percent
-	LimitHospitalDays    Days
-	MedicalServices      []MedicalService
-	WaitingPeriods       []WaitingPeriods
+	Accommodation        string
+	HospitalPercent      float32
+	LimitHospitalDays    int
+	MedicalServices      []MedicalService         `xml:">MedicalService"`
+	WaitingPeriods       []HospitalWaitingPeriods `xml:">WaitingPeriod"`
 	OtherProductFeatures string
-	AccidentCover        bool
+	AccidentCover        bool   `xml:",attr"`
+	BasedOnId            string `xml:",attr"`
 }
 
 type GeneralHealthCover struct {
-	BasedOnId bool `xml:",attr"`
-	ProductPreferredProviderServices struct{
+	BasedOnId                        bool `xml:",attr"`
+	ProductPreferredProviderServices struct {
 		UseFund bool `xml:",attr"`
 	}
-	GeneralHealthServices []*GeneralHealthService
+	GeneralHealthServices struct {
+		XMLName                   xml.Name `xml:"GeneralHealthServices"`
+		AllStatesHaveSameBenefits bool     `xml:",attr"`
+		GeneralHealthService      []*GeneralHealthServiceCategory
+	}
+	OtherServices string          `xml:",omitempty"`
+	BenefitLimits []*BenefitLimit `xml:">BenefitLimit"`
 }
 
-type GeneralHealthService struct {
-	Title string `xml:",attr"`
-	Covered bool `xml:",attr"`
-	HasSpecialFeatures bool `xml:,attr`
+type GeneralHealthServices struct {
+	XMLName                   xml.Name `xml:"GeneralHealthServices"`
+	AllStatesHaveSameBenefits bool     `xml:",attr"`
+	GeneralHealthService      []*GeneralHealthServiceCategory
+}
 
+type GeneralHealthServiceCategory struct {
+	XMLName            xml.Name       `xml:"GeneralHealthService"`
+	Title              string         `xml:",attr"`
+	Covered            bool           `xml:",attr"`
+	HasSpecialFeatures bool           `xml:",attr"`
+	WaitingPeriod      *WaitingPeriod `xml:",omitempty"`
+	BenefitsForState   *BenefitState  `xml:"BenefitsList,omitempty"`
+}
+
+type BenefitState struct {
+	XMLName xml.Name `xml:"BenefitsList"`
+	State   string   `xml:",attr"`
+	Benefit []*Benefit
+}
+
+type Benefit struct {
+	XMLName xml.Name `xml:"Benefit"`
+	Type    string   `xml:",attr"`
+	Item    string   `xml:",attr"`
+	Value   float32  `xml:",chardata"`
+}
+
+type BenefitLimit struct {
+	Title            string `xml:",attr"`
+	ServicesCombined struct {
+		IncludeOthersUnlisted bool `xml:",attr"`
+		Services              []*ServiceLimit
+	}
+	LimitPerPerson        int
+	LimitPerService       int
+	LimitPerPolicy        int
+	AnnualLimit           int
+	LifetimeLimit         int
+	ServiceCountLimit     int
+	OtherLimitDescription string `xml:"FreeTextLimit"`
+}
+
+type ServiceLimit struct {
+	SubLimitsApply   bool   `xml:",attr"`
+	IndLifetimeLimit int    `xml:",attr"`
+	ServiceName      string `xml:",chardata"`
 }
 
 type AmbulanceService struct {
 }
 
-type TierHospital struct {
-}
-
 type AgeBasedDiscount struct {
-}
-
-type Accommodation struct {
+	Available              bool `xml:",attr"`
+	AvailableForTransferee bool `xml:",attr"`
+	AgeRange               *struct {
+		MinAge int
+		MaxAge int
+	} `xml:",omitempty"`
 }
 
 type MedicalService struct {
+	Title string `xml:",attr"`
+	Cover string `xml:",attr"`
 }
 
-type WaitingPeriods struct {
+type WaitingPeriod struct {
+	Unit   string `xml:",attr"`
+	Period int    `xml:",chardata"`
+}
+
+type HospitalWaitingPeriods struct {
+	Unit   string `xml:",attr"`
+	Title  string `xml:",attr"`
+	Period int    `xml:",chardata"`
 }
